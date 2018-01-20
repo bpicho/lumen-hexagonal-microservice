@@ -1,0 +1,19 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Microservice built with Lumen 5 & Hexagonal Architecture",
+        "contact": {
+            "name": "Bartosz Picho",
+            "email": "bartek.picho@gmail.com"
+        },
+        "version": "1.0.0"
+    },
+    "host": "",
+    "basePath": "",
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "paths": {},
+    "definitions": {}
+}
