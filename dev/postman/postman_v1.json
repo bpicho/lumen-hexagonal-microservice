@@ -1,0 +1,102 @@
+{
+  "variables": [],
+  "info": {
+    "name": "Magento2",
+    "_postman_id": "21556e0b-98b1-87ab-9704-985555df10c9",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "rest/V1/integration/admin/token",
+      "request": {
+        "url": "{{url}}rest/V1/integration/admin/token",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Basic d2VnOnd1cnRoMTIz",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\"username\":\"admin\",\n\"password\":\"admin123123123\"\n}"
+        },
+        "description": "Create access token for admin given the admin credentials.\n\n"
+      },
+      "response": []
+    },
+    {
+      "name": "rest/V1/orders",
+      "request": {
+        "url": {
+          "raw": "{{url}}/rest/V1/orders?searchCriteria[filter_groups][0][filters][0][field]=created_at&searchCriteria[filter_groups][0][filters][0][value]=2018-02-07 14:25:18&searchCriteria[filter_groups][0][filters][0][condition_type]=lt&searchCriteria[filter_groups][1][filters][0][field]=created_at&searchCriteria[filter_groups][1][filters][0][value]=2018-02-07 11:55:18&searchCriteria[filter_groups][1][filters][0][condition_type]=gt",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "rest",
+            "V1",
+            "orders"
+          ],
+          "query": [
+            {
+              "key": "searchCriteria[filter_groups][0][filters][0][field]",
+              "value": "created_at",
+              "equals": true,
+              "description": ""
+            },
+            {
+              "key": "searchCriteria[filter_groups][0][filters][0][value]",
+              "value": "2018-02-07 14:25:18",
+              "equals": true,
+              "description": "UTC date time \"Y-m-d H:i:s\""
+            },
+            {
+              "key": "searchCriteria[filter_groups][0][filters][0][condition_type]",
+              "value": "lt",
+              "equals": true,
+              "description": ""
+            },
+            {
+              "key": "searchCriteria[filter_groups][1][filters][0][field]",
+              "value": "created_at",
+              "equals": true,
+              "description": ""
+            },
+            {
+              "key": "searchCriteria[filter_groups][1][filters][0][value]",
+              "value": "2018-02-07 11:55:18",
+              "equals": true,
+              "description": "UTC date time \"Y-m-d H:i:s\""
+            },
+            {
+              "key": "searchCriteria[filter_groups][1][filters][0][condition_type]",
+              "value": "gt",
+              "equals": true,
+              "description": ""
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer ftxd6v9oxegt3p8s4pgbcbe4r198j81q",
+            "description": ""
+          }
+        ],
+        "body": {},
+        "description": "Lists orders that match specified search criteria. "
+      },
+      "response": []
+    }
+  ]
+}
