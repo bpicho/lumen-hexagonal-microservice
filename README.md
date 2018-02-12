@@ -2,12 +2,13 @@
 Micro service sample project built with Lumen 5 and Hexagonal Architecture pattern.
 
 # How to run #
-Install dependencies:
+
+* Install dependencies:
 `composer install`
-Start containers:
+* Start containers:
 `cd dev/docker/`
 `sudo ./start_containers.sh` 
-Run migrations
+* Run migrations
 `php artisan migrate:install`
 `php artisan migrate`
 
