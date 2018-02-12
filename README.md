@@ -23,7 +23,7 @@ Graylog | localhost:9000
 
 Adminer | localhost:8089/adminer
 
-Swagger |
+Swagger | localhost:8080/api/documentation
 
 # Docker compose cheatsheet #
 
