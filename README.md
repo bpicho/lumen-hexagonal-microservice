@@ -11,19 +11,19 @@ Start containers:
 
 ## Services exposed outside your environment ##
 
-Service|Address outside containers
+Service | Address outside containers
 
-Webserver|[localhost:8080](http://localhost:8080)
+Webserver | [localhost:8080](http://localhost:8080)
 
-Mailhog web interface|[localhost:8081](http://localhost:8081)
+Mailhog web interface | [localhost:8081](http://localhost:8081)
 
-MySQL|**host:** `localhost`; **port:** `8082`
+MySQL |**host:** `localhost`; **port:** `8082`
 
-Graylog|
+Graylog | localhost:9000
 
-Adminer|
+Adminer | localhost:8089/adminer
 
-Swagger|`
+Swagger |
 
 # Docker compose cheatsheet #
 
