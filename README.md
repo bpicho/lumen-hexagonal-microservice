@@ -38,3 +38,7 @@ Swagger | localhost:8080/api/documentation
         * Shell into the PHP container, `docker-compose exec php-fpm bash`
         * Run symfony console, `docker-compose exec php-fpm bin/console`
         * Open a mysql shell, `docker-compose exec mysql mysql -uroot -pCHOSEN_ROOT_PASSWORD`
+        
+# Swagger cheatsheet #
+
+* Generate Swagger documentation `php artisan swagger-lume:publish`
