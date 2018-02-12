@@ -49,6 +49,7 @@ $app->singleton(
 );
 
 $app->configure('swagger-lume');
+$app->configure('queue');
 
 /*
 |--------------------------------------------------------------------------

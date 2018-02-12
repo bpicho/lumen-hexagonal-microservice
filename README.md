@@ -7,7 +7,9 @@ Install dependencies:
 Start containers:
 `cd dev/docker/`
 `sudo ./start_containers.sh` 
-
+Run migrations
+`php artisan migrate:install`
+`php artisan migrate`
 
 ## Services exposed outside your environment ##
 
